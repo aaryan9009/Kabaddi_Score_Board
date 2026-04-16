@@ -59,29 +59,29 @@ export default function KabaddiTimer() {
       <div className="w-full max-w-md grid grid-cols-2 gap-3">
         {/* Team 1 */}
         <div className="flex flex-col items-center bg-slate-800/60 p-2 rounded-xl border border-slate-700 shadow-lg">
-          <div className="text-7xl font-bold text-yellow-400 leading-none mb-2">{team1Score}</div>
+          <div className="text-9xl font-bold text-yellow-400 leading-none mb-2">{team1Score}</div>
           <div className="flex gap-1 w-full">
-            <Button onClick={() => setTeam1Score(team1Score + 1)} className="flex-1 h-12 text-3xl font-bold bg-yellow-500 text-slate-900 rounded-lg">+</Button>
-            <Button onClick={() => setTeam1Score(Math.max(0, team1Score - 1))} className="flex-1 h-12 text-3xl font-bold bg-slate-700 text-white rounded-lg">-</Button>
+            <Button onClick={() => setTeam1Score(team1Score + 1)} className="flex-1 h-8 text-3xl font-bold bg-yellow-500 text-slate-900 rounded-lg">+</Button>
+            <Button onClick={() => setTeam1Score(Math.max(0, team1Score - 1))} className="flex-1 h-8 text-3xl font-bold bg-slate-700 text-white rounded-lg">-</Button>
           </div>
         </div>
 
         {/* Team 2 */}
         <div className="flex flex-col items-center bg-slate-800/60 p-2 rounded-xl border border-slate-700 shadow-lg">
-          <div className="text-7xl font-bold text-yellow-400 leading-none mb-2">{team2Score}</div>
+          <div className="text-9xl font-bold text-yellow-400 leading-none mb-2">{team2Score}</div>
           <div className="flex gap-1 w-full">
-            <Button onClick={() => setTeam2Score(team2Score + 1)} className="flex-1 h-12 text-3xl font-bold bg-yellow-500 text-slate-900 rounded-lg">+</Button>
-            <Button onClick={() => setTeam2Score(Math.max(0, team2Score - 1))} className="flex-1 h-12 text-3xl font-bold bg-slate-700 text-white rounded-lg">-</Button>
+            <Button onClick={() => setTeam2Score(team2Score + 1)} className="flex-1 h-8 text-3xl font-bold bg-yellow-500 text-slate-900 rounded-lg">+</Button>
+            <Button onClick={() => setTeam2Score(Math.max(0, team2Score - 1))} className="flex-1 h-8 text-3xl font-bold bg-slate-700 text-white rounded-lg">-</Button>
           </div>
         </div>
       </div>
 
       {/* 2. Unified Utility Buttons (Same Colors) */}
       <div className="flex gap-2 w-full max-w-md mt-3">
-        <Button onClick={handleReset} className="flex-1 h-10 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold uppercase rounded-lg border border-slate-500">
+        <Button onClick={handleReset} className="flex-1 h-8 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold uppercase rounded-lg border border-slate-500">
           Reset Scores
         </Button>
-        <Button onClick={handleSwitch} className="flex-1 h-10 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold uppercase rounded-lg border border-slate-500">
+        <Button onClick={handleSwitch} className="flex-1 h-8 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold uppercase rounded-lg border border-slate-500">
           Switch Sides
         </Button>
       </div>
@@ -95,10 +95,10 @@ export default function KabaddiTimer() {
 
         {/* Timer Controls */}
         <div className="flex gap-4">
-          <Button onClick={handleStart} className="h-14 px-10 text-2xl font-black bg-green-600 hover:bg-green-500 text-white rounded-xl shadow-xl active:scale-95 transition-transform">
+          <Button onClick={handleStart} className="h-10 px-8 text-2xl font-black bg-green-600 hover:bg-green-500 text-white rounded-xl shadow-xl active:scale-95 transition-transform">
             START
           </Button>
-          <Button onClick={handleStop} className="h-14 px-10 text-2xl font-black bg-red-600 hover:bg-red-500 text-white rounded-xl shadow-xl active:scale-95 transition-transform">
+          <Button onClick={handleStop} className="h-10 px-8 text-2xl font-black bg-red-600 hover:bg-red-500 text-white rounded-xl shadow-xl active:scale-95 transition-transform">
             STOP
           </Button>
         </div>
